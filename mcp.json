@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "office-word-mcp": {
+      "command": "uvx",
+      "args": ["office-word-mcp-server"],
+      "description": "Microsoft Office and Word document manipulation via MCP"
+    },
+    "arxiv-latex-mcp": {
+      "command": "uvx",
+      "args": ["arxiv-latex-mcp"],
+      "description": "ArXiv LaTeX paper search and analysis via MCP"
+    }
+  }
+}

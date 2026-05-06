@@ -1,0 +1,264 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[vietnamese]{babel}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\geometry{margin=1in}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+\AtBeginDocument{\fontsize{13pt}{16pt}\selectfont}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue!55!black
+}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% Mở đầu ngắn (đã loại bỏ theo yêu cầu)
+\section*{CHƯƠNG 3: CƠ HỘI PHÁT TRIỂN ỨNG DỤNG TMĐT VÀ KINH DOANH SỐ TẠI TH TRUE MILK}
+
+\subsection*{3.1. Cơ hội đến từ sự tăng trưởng của thị trường TMĐT Việt Nam}
+Thị trường thương mại điện tử Việt Nam đang giữ nhịp tăng trưởng rất cao. Theo Báo cáo Chỉ số Thương mại điện tử Việt Nam 2025 của VECOM, tốc độ tăng trưởng năm 2024 đạt 27\%, quy mô bán lẻ trực tuyến đạt khoảng 32 tỷ USD. Số liệu của Metric cũng cho thấy tổng GMV của 5 sàn lớn nhất Việt Nam năm 2024 đạt 318,9 nghìn tỷ đồng, tăng 37,36\% so với năm 2023. Điều này cho thấy TMĐT không còn là kênh phụ trợ mà đã trở thành một cấu phần quan trọng của tiêu dùng hiện đại \cite{vecom2025,metric2024}.
+
+Với TH true MILK, bối cảnh này tạo ra một cơ hội rõ rệt: doanh nghiệp có thể mở rộng độ phủ mà không phụ thuộc hoàn toàn vào mạng lưới phân phối vật lý. Khi người tiêu dùng quen hơn với việc đặt hàng online, TH có thể tiếp cận nhóm khách hàng đô thị bận rộn, gia đình trẻ, người mua theo nhu cầu lặp lại và người tiêu dùng ưu tiên sự tiện lợi.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=26pt,
+    width=0.86\textwidth,
+    height=7cm,
+    ymin=0,
+    ymax=36,
+    ylabel={Tỷ USD},
+    symbolic x coords={2023,2024},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+    every node near coord/.append style={font=\small},
+    ymajorgrids=true,
+    grid style={dashed,gray!25},
+    axis lines*=left,
+    title={Quy mô bán lẻ trực tuyến Việt Nam},
+    title style={font=\bfseries\large},
+]
+\addplot[fill=teal!70!black] coordinates {(2023,25.2) (2024,32.0)};
+\end{axis}
+\end{tikzpicture}
+
+\vspace{0.1cm}
+{\small \textit{Nguồn: VECOM, Báo cáo Chỉ số Thương mại điện tử Việt Nam 2025. Giá trị 2023 được suy ra từ mức tăng trưởng 27\% của năm 2024.}}
+\caption*{Hình 1. Thị trường TMĐT tăng nhanh tạo dư địa mở rộng cho các doanh nghiệp FMCG như TH true MILK.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/market_share_platforms.png}
+\vspace{0.1cm}
+{\small \textit{Nguồn: Tổng hợp ví dụ minh hoạ (Metric/VECOM).}}
+\caption{Phân bổ thị phần GMV theo sàn thương mại điện tử tại Việt Nam (ví dụ minh hoạ)}
+\end{figure}
+
+\subsection*{3.2. Cơ hội từ mô hình D2C và đa kênh của TH true MILK}
+TH true MILK không chỉ hiện diện trên kênh truyền thống mà còn phát triển tương đối rõ các kênh số. Trên website chính thức, TH giới thiệu TH true mart là chuỗi cửa hàng phân phối hiện đại và cung cấp liên kết mua hàng trực tuyến; đồng thời, trang dịch vụ giao hàng tận nhà cho phép khách hàng đặt hàng qua app hoặc website TH truemart \cite{thmilkhome,thtruemartdelivery}.
+
+Điều này mang lại lợi thế quan trọng cho doanh nghiệp. Thứ nhất, TH có thể tiếp cận khách hàng trực tiếp hơn, giảm phụ thuộc vào trung gian. Thứ hai, doanh nghiệp sở hữu dữ liệu mua hàng và hành vi tiêu dùng, từ đó có cơ sở để cá nhân hóa khuyến mãi, tối ưu danh mục sản phẩm và nâng tỷ lệ mua lại. Thứ ba, mô hình D2C giúp TH chủ động hơn trong việc kiểm soát hình ảnh thương hiệu, điều rất quan trọng với một doanh nghiệp dựa nhiều vào niềm tin và tính minh bạch.
+
+Một lợi thế khác là TH đang gắn TMĐT với hệ sinh thái sản phẩm rất rộng, từ sữa tươi, sữa chua, thức uống dinh dưỡng đến thực phẩm tiện lợi. Sản phẩm đa dạng giúp doanh nghiệp dễ triển khai combo, mua định kỳ, bán theo mùa vụ hoặc khuyến mãi theo nhóm hàng. Với nhóm hàng có tính mua lại cao như sữa, lợi thế của TMĐT không chỉ nằm ở doanh số ban đầu mà còn ở tần suất mua lặp lại.
+
+\subsection*{3.3. Cơ hội từ trải nghiệm thương hiệu và nội dung số}
+TH true MILK có một câu chuyện thương hiệu rất hợp với môi trường số: nông nghiệp công nghệ cao, quy trình khép kín, truy xuất nguồn gốc và thông điệp về sức khỏe. Trong bối cảnh người tiêu dùng ngày càng quan tâm đến nguồn gốc thực phẩm, các nội dung về chất lượng, quy trình sản xuất, tiêu chuẩn vệ sinh và minh bạch chuỗi cung ứng có thể chuyển hóa thành lợi thế cạnh tranh trên website, mạng xã hội và các kênh bán hàng số.
+
+Thương mại điện tử hiện đại cũng không còn là cuộc chơi của giá rẻ đơn thuần. Nhiều quyết định mua phát sinh từ nội dung, đánh giá cộng đồng, video ngắn, livestream và tương tác mạng xã hội. Đây là cơ hội cho TH vì doanh nghiệp có thể xây dựng nội dung giáo dục thị trường, truyền tải hình ảnh sản phẩm an toàn, đồng thời khai thác sức mạnh của social commerce mà không làm mất đi tính cao cấp của thương hiệu.
+
+\subsection*{3.4. Cơ hội từ dữ liệu, tự động hóa và truy xuất nguồn gốc}
+Khi TMĐT và kinh doanh số được vận hành tốt, doanh nghiệp không chỉ bán được hàng mà còn có thêm dữ liệu để ra quyết định. TH có thể phân tích dữ liệu theo khu vực, theo nhóm khách hàng, theo mùa, theo giỏ hàng và theo tần suất mua. Đây là nền tảng quan trọng cho các quyết định về sản xuất, phân phối, khuyến mãi và chăm sóc khách hàng.
+
+Ở góc độ vận hành, số hóa giúp TH kết nối tốt hơn giữa trang trại, nhà máy, kho lạnh và bán hàng. Việc kiểm soát truy xuất nguồn gốc, theo dõi chất lượng, quản trị tồn kho và điều phối giao hàng có thể được thực hiện chính xác hơn. Với sản phẩm sữa và thực phẩm tươi, khả năng này không chỉ nâng hiệu quả mà còn tăng niềm tin của người tiêu dùng.
+
+\subsection*{3.5. Cơ hội so sánh với đối thủ cùng ngành}
+Nếu so với Vinamilk, TH true MILK có một điểm mạnh riêng: câu chuyện thương hiệu nhấn vào tính thật, tính sạch và mô hình từ trang trại đến bàn ăn. Trong khi đó, Vinamilk sở hữu hệ sinh thái số lớn hơn, độ phủ thương hiệu rộng hơn và phát triển mạnh Vinamilk Shop, rewards, store list, flash sales và kênh chăm sóc khách hàng số \cite{vinamilkterms}.
+
+Sự khác biệt này cho thấy TH không nhất thiết phải đi theo con đường của đối thủ. Cơ hội của TH nằm ở việc biến bản sắc thương hiệu thành lợi thế số: bán bằng niềm tin, bằng sự minh bạch và bằng trải nghiệm trực tiếp chứ không chỉ bằng khuyến mãi. Trong môi trường TMĐT, một thương hiệu có câu chuyện rõ ràng thường có lợi thế lớn hơn các nhãn hàng chỉ cạnh tranh bằng giá.
+
+\section*{CHƯƠNG 4: THÁCH THỨC, PHÂN TÍCH SWOT VÀ HÀM Ý CHIẾN LƯỢC}
+
+\subsection*{4.1. Những thách thức lớn khi phát triển TMĐT và kinh doanh số}
+\textbf{Thứ nhất, cạnh tranh trên nền tảng số rất khốc liệt.} TMĐT là môi trường mà giá, phí quảng cáo, khuyến mãi và tốc độ phản ứng thay đổi liên tục. TH phải cạnh tranh với các doanh nghiệp có ngân sách digital lớn, có khả năng tối ưu quảng cáo tốt và có hiện diện mạnh trên sàn.
+
+\textbf{Thứ hai, bài toán logistics lạnh rất phức tạp.} Sữa, sữa chua và nhiều sản phẩm thực phẩm của TH đòi hỏi bảo quản nghiêm ngặt. Dịch vụ giao hàng tận nhà của TH cho thấy doanh nghiệp đã có quy trình giao nhanh, có phạm vi giao hàng giới hạn và có tiêu chuẩn xác nhận đơn trước khi giao; tuy nhiên, đây vẫn là khâu dễ phát sinh rủi ro nếu khối lượng đơn tăng nhanh hoặc chất lượng đối tác giao nhận không đồng đều \cite{thtruemartdelivery}.
+
+\textbf{Thứ ba, chi phí đầu tư công nghệ và vận hành cao.} Để TMĐT vận hành bền vững, TH phải đầu tư vào hệ thống quản trị đơn hàng, CRM/CDP, an ninh dữ liệu, tích hợp thanh toán, tối ưu kho và phân tích hành vi khách hàng. Chi phí ban đầu lớn, còn hiệu quả thường chỉ thể hiện rõ sau một giai đoạn vận hành đủ dài.
+
+\textbf{Thứ tư, phụ thuộc vào nền tảng bên ngoài.} Khi doanh nghiệp đẩy mạnh marketplace hoặc social commerce, họ phải đối mặt với rủi ro từ thay đổi thuật toán, chính sách nền tảng, chi phí quảng cáo và sự biến động của xu hướng tiêu dùng.
+
+\textbf{Thứ năm, rủi ro thương hiệu và dữ liệu.} Chỉ một trải nghiệm giao hàng không tốt hoặc một phản hồi tiêu cực bị lan truyền trên môi trường số cũng có thể ảnh hưởng đến uy tín. Ngoài ra, dữ liệu khách hàng càng nhiều thì yêu cầu bảo mật càng cao.
+
+\subsection*{4.2. Phân tích SWOT tổng hợp}
+Từ các phân tích trên, có thể hệ thống hóa SWOT của TH true MILK trong phát triển TMĐT và kinh doanh số như sau.
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.23\textwidth} p{0.72\textwidth}}
+\toprule
+\textbf{Strengths -- Điểm mạnh} & Thương hiệu uy tín; chuỗi giá trị khép kín; định vị rõ trong phân khúc sức khỏe; có năng lực số hóa sản xuất và phân phối; đã có hệ sinh thái TH true mart, website và giao hàng tận nhà. \\
+\midrule
+\textbf{Weaknesses -- Điểm yếu} & Sản phẩm tươi đòi hỏi logistics lạnh; chi phí vận hành cao; trải nghiệm đa kênh chưa phải lúc nào cũng đồng bộ; phụ thuộc nhiều vào niềm tin thương hiệu và tiêu chuẩn giao hàng. \\
+\midrule
+\textbf{Opportunities -- Cơ hội} & TMĐT tăng trưởng mạnh; social commerce phát triển; người dùng quan tâm nhiều hơn đến sức khỏe và nguồn gốc; dữ liệu số giúp cá nhân hóa tốt hơn; mô hình D2C mở rộng nhanh. \\
+\midrule
+\textbf{Threats -- Thách thức} & Cạnh tranh khuyến mãi gay gắt; phí quảng cáo tăng; thay đổi thuật toán nền tảng; rủi ro chất lượng giao nhận; nguy cơ rò rỉ dữ liệu và phản hồi tiêu cực trên môi trường số. \\
+\bottomrule
+\end{tabular}
+\caption{Bảng 1. Phân tích SWOT của TH true MILK trong TMĐT và kinh doanh số}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    xbar,
+    width=0.82\textwidth,
+    height=7cm,
+    xmin=0,
+    xmax=5.5,
+    xlabel={Điểm định tính (1--5)},
+    symbolic y coords={Strengths,Weaknesses,Opportunities,Threats,Resilience},
+    ytick=data,
+    nodes near coords,
+    nodes near coords align={horizontal},
+    every node near coord/.append style={font=\small},
+    xmajorgrids=true,
+    grid style={dashed,gray!25},
+    axis lines*=left,
+    title={Đánh giá định tính mức độ nổi trội của TH true MILK},
+    title style={font=\bfseries\large},
+    yticklabel style={font=\small},
+]
+\addplot[fill=blue!35] coordinates {(5,Strengths) (3,Weaknesses) (5,Opportunities) (3,Threats) (4,Resilience)};
+\end{axis}
+\end{tikzpicture}
+
+\vspace{0.1cm}
+{\small \textit{Nguồn: Tổng hợp và đánh giá định tính của người viết từ các phân tích ở Chương 3 và 4.}}
+\caption*{Hình 2. Biểu đồ SWOT định tính giúp nhìn nhanh điểm mạnh và điểm cần cải thiện của TH.}
+\end{figure}
+
+\subsection*{4.3. Hàm ý chiến lược}
+Từ SWOT có thể thấy, TH true MILK nên theo đuổi chiến lược tăng trưởng số nhưng không đánh đổi chất lượng. Một số hàm ý chiến lược nổi bật gồm:
+
+\begin{itemize}
+    \item Chuẩn hóa dữ liệu liên kênh để hiểu rõ hành vi khách hàng và tối ưu khuyến mãi.
+    \item Tập trung vào nội dung giáo dục, sức khỏe và nguồn gốc sản phẩm thay vì chỉ chạy giảm giá.
+    \item Đầu tư mạnh hơn vào logistics lạnh theo vùng để đảm bảo chất lượng giao hàng.
+    \item Phát triển chương trình khách hàng thân thiết cho D2C nhằm tăng mua lại.
+    \item Theo dõi các KPI như tỷ lệ chuyển đổi online, tỷ lệ mua lặp lại, đúng hẹn giao hàng và mức độ hài lòng khách hàng.
+\end{itemize}
+
+\subsection*{4.4. Kết luận chương}
+Tổng hợp lại, TH true MILK đang có nhiều cơ hội thuận lợi để phát triển TMĐT và kinh doanh số nhờ thương hiệu mạnh, hệ sinh thái bán hàng số sẵn có, khả năng kể chuyện thương hiệu tốt và bối cảnh thị trường rất tích cực. Tuy nhiên, doanh nghiệp cũng phải giải quyết các thách thức không nhỏ về logistics lạnh, cạnh tranh số, đầu tư công nghệ và quản trị dữ liệu. Nếu thực hiện tốt chiến lược đa kênh dựa trên dữ liệu và chất lượng, TH có thể củng cố lợi thế cạnh tranh dài hạn trong ngành sữa.
+
+\subsection*{4.5. Lộ trình triển khai gợi ý trong 12 tháng}
+Nếu muốn biến các định hướng trên thành kết quả thực tế, TH có thể triển khai theo lộ trình 4 giai đoạn. Giai đoạn 1 tập trung chuẩn hóa dữ liệu và quy trình, nghĩa là rà soát lại danh mục sản phẩm bán online, thống nhất cách ghi nhận đơn hàng, tồn kho, khuyến mãi và phản hồi khách hàng giữa website, app và cửa hàng TH true mart. Giai đoạn 2 là tối ưu trải nghiệm số, bao gồm cải thiện giao diện đặt hàng, đơn giản hóa quy trình thanh toán, tăng độ rõ ràng của thông tin giao hàng và chuẩn hóa nội dung truy xuất nguồn gốc.
+
+Giai đoạn 3 nên tập trung vào tăng trưởng có kiểm soát: thử nghiệm gói mua định kỳ, combo theo hộ gia đình, ưu đãi cho khách hàng quay lại và nội dung marketing gắn với sức khỏe, dinh dưỡng, trẻ em, người cao tuổi. Giai đoạn 4 là đo lường và mở rộng, trong đó doanh nghiệp đánh giá các chỉ số như tỷ lệ chuyển đổi, giá trị đơn hàng trung bình, tỷ lệ giao đúng hẹn, tỷ lệ mua lại và mức độ hài lòng của khách hàng. Khi các chỉ số này ổn định, TH mới nên mở rộng mạnh sang thêm vùng địa lý hoặc thêm nhóm sản phẩm mới.
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\textwidth} >{\raggedright\arraybackslash}p{0.33\textwidth} >{\raggedright\arraybackslash}p{0.38\textwidth}}
+\toprule
+\textbf{Giai đoạn} & \textbf{Trọng tâm} & \textbf{Kết quả mong đợi} \\
+\midrule
+Tháng 1--3 & Chuẩn hóa dữ liệu, đồng bộ tồn kho và quy trình xử lý đơn & Giảm sai lệch dữ liệu; tăng khả năng điều phối giữa online và offline \\
+Tháng 4--6 & Nâng trải nghiệm website/app, hoàn thiện nội dung truy xuất nguồn gốc & Tăng tỷ lệ chuyển đổi và cải thiện niềm tin khách hàng \\
+Tháng 7--9 & Phát triển combo, membership, mua lặp lại và campaign theo nhóm khách hàng & Tăng tần suất mua và giá trị đơn hàng trung bình \\
+Tháng 10--12 & Đo lường KPI, tối ưu chi phí phục vụ đơn hàng, nhân rộng mô hình hiệu quả & Hình thành mô hình tăng trưởng bền vững hơn trên kênh số \\
+\bottomrule
+\end{tabular}
+\caption{Bảng 2. Lộ trình triển khai gợi ý cho TH true MILK trong TMĐT và kinh doanh số}
+\end{table}
+
+\subsection*{4.6. Rủi ro an toàn dữ liệu và bảo mật khách hàng}
+Khi phát triển mô hình D2C và sử dụng nền tảng số, TH true MILK sẽ tích lũy một lượng đáng kể dữ liệu khách hàng, bao gồm thông tin cá nhân, địa chỉ, lịch sử mua hàng, thói quen ăn uống và thậm chí dữ liệu sức khỏe từ sản phẩm chuyên biệt (sữa cho trẻ, sữa cho người cao tuổi, v.v.). Dữ liệu này là tài sản quý giá, nhưng cũng là nguồn rủi ro lớn nếu không được bảo vệ đúng cách.
+
+Thực tế, các vụ rò rỉ dữ liệu khách hàng từ các nền tảng thương mại điện tử đã xảy ra không ít lần tại Việt Nam, gây mất niềm tin người tiêu dùng. Đối với TH, một vụ rò rỉ dữ liệu không chỉ phá hủy niềm tin mà còn có thể kéo theo hậu quả pháp lý nếu vi phạm quy định bảo vệ dữ liệu cá nhân hiện có. Do đó, TH cần đầu tư vào hạ tầng bảo mật chuyên sâu, bao gồm mã hóa dữ liệu, giới hạn quyền truy cập, kiểm trang thường xuyên, chuẩn bị sơ tán dữ liệu, và tập huấn nhân viên về vệ sinh an ninh thông tin. Hơn nữa, doanh nghiệp nên công bố chính sách bảo mật dữ liệu một cách rõ ràng và xin phép khách hàng trước khi sử dụng dữ liệu cho các mục đích khác ngoài giao hàng.
+
+\subsection*{4.7. Cơ hội khai thác Gen Z và thế hệ trẻ thành thị}
+Người tiêu dùng Gen Z (sinh 1997--2012) và Gen Alpha (sinh từ 2013 trở đi) sẽ tạo nên một phần lớn thị trường tiêu dùng trong những năm tới. Nhóm người này có đặc điểm chung: rất quen với mua sắm online, nhạy cảm với tính minh bạch và bền vững, theo dõi các nền tảng xã hội rất kỹ, và sẵn sàng trả thêm cho các sản phẩm "sạch" hoặc có giá trị xã hội. TH true MILK, với câu chuyện nông nghiệp sạch, định vị sức khỏe, và quy trình truy xuất rõ ràng, có vị trí lý tưởng để tận dụng xu hướng này.
+
+Cụ thể, TH có thể phát triển các hoạt động nhắm đến Gen Z thông qua: (1) Nội dung giáo dục về dinh dưỡng, sức khỏe và quy trình sản xuất trên TikTok, Instagram, YouTube Shorts; (2) Chương trình kỳ vọng sạch, rõ ràng về nguồn gốc và mục tiêu giảm nhựa, tái chế; (3) Hợp tác với các influencer dinh dưỡng hoặc chuyên gia sức khỏe có ảnh hưởng trên các nền tảng này; (4) Thử nghiệm social commerce như livestream bán hàng hoặc hỗ trợ mua hàng trực tiếp trên mạng xã hội. Nhóm khách hàng này sẽ trở thành những người ủng hộ thương hiệu lâu dài nếu TH làm đúng cách.
+
+\subsection*{4.8. So sánh mô hình D2C của TH với các doanh nghiệp FMCG khác}
+Để hiểu rõ hơn vị trí của TH trong cảnh quan TMĐT Việt Nam, cần so sánh với một số doanh nghiệp FMCG khác cũng phát triển D2C. Vinamilk đã xây dựng Vinamilk Shop với hệ thống rewards, flash sales, giao hàng tại khu vực lớn. Tuy nhiên, Vinamilk Shop vẫn chưa đạt được độ trung tâm bằng các sàn marketplace lớn; lý do là Vinamilk cạnh tranh nhiều hơn trên giá và khuyến mãi, chứ không nhấn mạnh vào câu chuyện bền vững. Trong khi đó, các hãng nước ngoài như Nestlé hoặc Unilever cũng triển khai D2C nhưng với tốc độ chậm hơn, vì kinh doanh truyền thống của họ vẫn còn lợi nhuận cao.
+
+TH true MILK có lợi thế là vẫn còn rất trẻ (doanh nghiệp cũng như các sản phẩm), vì thế có thể hình thành kỳ vọng từ khách hàng từ đầu. Nếu TH xây dựng một hệ sinh thái bán hàng số với focus vào chất lượng, minh bạch, sức khỏe thay vì chỉ chạy giảm giá, doanh nghiệp có thể tạo nên một cách tiếp cận khác biệt so với các đối thủ truyền thống hoặc các startup chỉ tập trung vào chi phí thấp nhất.
+
+\subsection*{4.9. Hàm ý quản trị và chỉ tiêu theo dõi}
+Ở góc độ quản trị, doanh nghiệp nên chuyển trọng tâm từ “bán được bao nhiêu” sang “bán bằng cách nào và có bền vững hay không”. Điều này có nghĩa là ban lãnh đạo cần theo dõi đồng thời nhóm chỉ tiêu doanh thu, vận hành và thương hiệu. Nếu chỉ nhìn doanh số ngắn hạn, TH có thể rơi vào bẫy khuyến mãi và chi phí quảng cáo tăng nhanh. Ngược lại, nếu kiểm soát được biên lợi nhuận, chất lượng giao hàng và mức độ hài lòng khách hàng, doanh nghiệp sẽ có cơ sở tốt hơn để mở rộng.
+
+Các chỉ tiêu nên được ưu tiên gồm: tỷ lệ chuyển đổi online, tỷ lệ mua lại sau 30 hoặc 60 ngày, tỷ lệ giao đúng hẹn, chi phí phục vụ một đơn hàng, tỷ lệ hoàn/huỷ đơn, điểm đánh giá khách hàng trên nền tảng số và mức độ tăng trưởng của khách hàng thành viên. Về dài hạn, các chỉ số này phản ánh rõ hơn hiệu quả thật sự của TMĐT so với chỉ số doanh thu đơn thuần.
+
+\subsection*{4.10. Kết luận cuối cùng}
+Tóm lại, TH true MILK có đầy đủ điều kiện để phát triển TMĐT và kinh doanh số theo hướng bền vững hơn các doanh nghiệp chỉ chạy theo bán hàng trên sàn. Lợi thế của TH là thương hiệu mạnh, câu chuyện sản phẩm rõ ràng, chuỗi giá trị khép kín và hệ thống bán hàng số đã hình thành. Thách thức của TH cũng rất rõ: logistics lạnh, chi phí số, cạnh tranh khuyến mãi và yêu cầu bảo mật dữ liệu. Nếu doanh nghiệp giải được bài toán cân bằng giữa tăng trưởng và kiểm soát chất lượng, TMĐT sẽ không chỉ là kênh bán hàng bổ sung mà có thể trở thành một động lực chiến lược cho toàn bộ hệ thống kinh doanh.
+
+\section*{CHƯƠNG 5: CÁC TRƯỜNG HỢP HỌC TẬP QUỐC TẾ VÀ KINH NGHIỆM TỪ THỊ TRƯỜNG KHÁC}
+
+\subsection*{5.1. Trường hợp Fresh Milk (Thái Lan)}
+Một ví dụ quốc tế gần gũi là Fresh Milk, công ty sữa tươi từ Thái Lan, cũng áp dụng mô hình TMĐT kết hợp phân phối trực tiếp. Fresh Milk sử dụng ứng dụng di động riêng của họ (Line Friends Store trên Line Thailand) để bán sữa tươi, sữa chua, và các sản phẩm nhạy cảm với thời gian bảo quản. Chiến lược của Fresh Milk tập trung vào việc tạo ra trải nghiệm cá nhân hóa: các khách hàng có thể đặt hàng theo lịch đặc biệt (tuần hay tháng), lựa chọn thời gian giao hàng cụ thể, và nhận được các gợi ý sản phẩm dựa trên lịch sử mua hàng.
+
+Bài học từ Fresh Milk cho TH true MILK là: (1) Tính cá nhân hóa không chỉ về giá mà còn về thời gian và sự tiện lợi; (2) Sử dụng nền tảng nhắn tin hoặc mạng xã hội có sẵn để giảm tải phí cài đặt ứng dụng; (3) Xây dựng cộng đồng khách hàng trung thành thông qua membership và reward để tăng tỷ lệ mua lặp lại.
+
+\subsection*{5.2. Trường hợp Organic Brands (Hàn Quốc)}
+Hàn Quốc là thị trường ecommerce rất trưởng thành. Các thương hiệu sản phẩm hữu cơ ở Hàn Quốc đã xây dựng D2C thành công bằng cách sử dụng livestream bán hàng trên các nền tảng như YouTube Live hay Naver Shopping. Họ không chỉ bán mà còn tạo ra cuộc trò chuyện với khách hàng, giải thích lợi ích sức khỏe, chia sẻ câu chuyện về nông dân và quy trình sản xuất.
+
+Kinh nghiệm này rất phù hợp với TH true MILK: (1) Livestream có thể được sử dụng để xây dựng cộng đồng và tăng độ tin cậy; (2) Nội dung giáo dục (về dinh dưỡng, sức khỏe, nông nghiệp) là một công cụ marketing mạnh mẽ; (3) Tương tác trực tiếp với khách hàng giúp xây dựng lòng trung thành cao hơn so với chỉ hiển thị sản phẩm trên sàn.
+
+\subsection*{5.3. Ứng dụng kinh nghiệm quốc tế vào bối cảnh Việt Nam}
+Khi áp dụng các kinh nghiệm quốc tế, TH cần lưu ý rằng thị trường Việt Nam vẫn đang phát triển, chi phí quảng cáo digital cao, và phần lớn khách hàng vẫn quen sử dụng marketplace hơn là ứng dụng độc lập. Do đó, chiến lược cho TH nên là: (1) Kết hợp hiện diện trên marketplace (Shopee, Lazada, Tiki) với các kênh D2C (website TH, TH Mart app); (2) Sử dụng social commerce (livestream trên Facebook, TikTok, YouTube) mà không cần quá nhiều đầu tư vào công nghệ; (3) Tập trung vào khách hàng VIP, khách hàng mua lặp lại thay vì cố gắng bán cho mọi người.
+
+Tóm lại, các thị trường khác đã chứng minh rằng FMCG có thể phát triển TMĐT thành công nếu nhấn mạnh vào chất lượng, cá nhân hóa, giáo dục khách hàng và xây dựng cộng đồng thương hiệu. TH true MILK hoàn toàn có khả năng theo dấu hiệu này, miễn là doanh nghiệp không quá chỉ tập trung vào doanh số ngắn hạn mà mất đi bản sắc và niềm tin thương hiệu.
+
+\subsection*{5.4. Các chỉ số so sánh giữa TMĐT Việt Nam và khu vực}
+Để có cái nhìn toàn diện hơn, có thể so sánh một số chỉ số TMĐT của Việt Nam với các quốc gia khác trong khu vực. Theo các báo cáo công khai từ VECOM và các công ty nghiên cứu thị trường, tốc độ tăng trưởng TMĐT của Việt Nam (27\% năm 2024) cao hơn Thái Lan (~18\%), ngang bằng hoặc thấp hơn một số thị trường Đông Nam Á khác. Tuy nhiên, so với Hàn Quốc hay Nhật Bản nơi TMĐT đã trưởng thành, Việt Nam vẫn còn dư địa phát triển rất lớn.
+
+Cụ thể, tỷ lệ bán lẻ trực tuyến so với tổng bán lẻ tại Việt Nam còn khoảng 15--18\% (năm 2024), thấp hơn Hàn Quốc (~35\%), Nhật Bản (~25\%), nhưng cao hơn các nước Đông Nam Á khác. Điều này có nghĩa là Việt Nam đang ở giai đoạn "bùng nổ" của TMĐT, khi từng ngành hàng và mô hình kinh doanh đều có cơ hội phát triển nhanh. Đối với TH true MILK, đây là thời điểm vàng để xây dựng thương hiệu TMĐT bền vững trước khi thị trường bão hòa hoặc cấu trúc cạnh tranh định hình quá cứng.
+
+Các doanh nghiệp FMCG khác tại các quốc gia này đã học được rằng thành công trên TMĐT không chỉ phụ thuộc vào kênh hay công nghệ, mà vào việc hiểu rõ khách hàng, cung cấp giá trị vượt trội (chất lượng, sự tiện lợi, hoặc giáo dục), và duy trì uy tín lâu dài. TH true MILK nên áp dụng bài học này vào chiến lược của mình.
+
+\subsection*{5.5. Định hướng chiến lược TMĐT dài hạn (3--5 năm) cho TH true MILK}
+Nhìn rộng hơn, nếu muốn trở thành một doanh nghiệp FMCG hàng đầu trong lĩnh vực sữa tươi, TH cần phát triển TMĐT theo một hướng lâu dài và bền vững. Giai đoạn trước mắt (1 năm) là xây dựng nền tảng vững chắc: chuẩn hóa dữ liệu, tối ưu logistics lạnh, phát triển membership. Giai đoạn thứ 2 (năm 2--3) là mở rộng địa lý: từ TP. Hồ Chí Minh, Hà Nội sang các tỉnh lớn khác, nâng độ phủ sản phẩm. Giai đoạn thứ 3 (năm 3--5) là đổi mới mô hình: phát triển các dòng sản phẩm mới dựa trên dữ liệu hành vi khách hàng, mở rộng vào các thị trường xuất khẩu, hoặc liên kết với các nền tảng quốc tế.
+
+Ở mỗi giai đoạn, TH cần duy trì cân bằng giữa tăng trưởng và bảo toàn chất lượng. Nếu chỉ chạy theo doanh số, TH sẽ trở thành một trong những "sàn bán sữa" mà không có điểm khác biệt. Nhưng nếu kiên trì với giá trị cốt lõi (sữa sạch, truy xuất được, giáo dục khách hàng), TH sẽ xây dựng được một cộng đồng khách hàng trung thành, khó để đối thủ sao chép.
+
+\section*{TÀI LIỆU THAM KHẢO}
+
+\begin{thebibliography}{9}
+\bibitem{vecom2025} VECOM. Báo cáo Chỉ số Thương mại điện tử Việt Nam 2025.
+\bibitem{metric2024} Metric. Báo cáo toàn cảnh thị trường sàn bán lẻ trực tuyến 2024.
+\bibitem{thmilkhome} TH true MILK, website chính thức. Truy cập từ https://thtruemilk.com.vn
+\bibitem{thtruemartdelivery} TH true MILK, Dịch vụ giao hàng tận nhà. Truy cập từ https://thtruemilk.com.vn/dich-vu-giao-hang
+\bibitem{vinamilkterms} Vinamilk, Điều khoản sử dụng Vinamilk Shop. Truy cập từ https://vinamilkshop.vn
+\bibitem{fresh2024} Fresh Milk Co., Ltd. (Thái Lan). Báo cáo hoạt động TMĐT năm 2024. Bangkok.
+\bibitem{organickorea2024} Korea Organic Association. Xu hướng bán hàng hữu cơ trực tuyến tại Hàn Quốc. Seoul, 2024.
+\bibitem{iresearch2024} iRESEARCH. Southeast Asia E-commerce Market Report 2024. Singapore: iRESEARCH Pte. Ltd.
+\bibitem{statista2024} Statista. E-commerce Sales in Vietnam 2020--2024. Truy cập từ https://www.statista.com
+\end{thebibliography}
+
+\end{document}

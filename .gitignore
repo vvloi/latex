@@ -1,0 +1,112 @@
+# ======================
+# LaTeX Compilation Output
+# ======================
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.xdv
+*.dvi
+*.ps
+
+# ========================
+# PDF Output (regenerate)
+# ========================
+*.pdf
+
+# ====================
+# Python & venv
+# ====================
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ====================
+# Build & Distribution
+# ====================
+dist/
+build/
+*.whl
+*.tar.gz
+
+# ====================
+# macOS
+# ====================
+.DS_Store
+*.swp
+*.swo
+*~
+.AppleDouble
+.LSOverride
+
+# ====================
+# IDEs & Editors
+# ====================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.atom/
+.vim/
+.emacs.d/
+
+# ====================
+# Git & Version Control
+# ====================
+.git/
+.gitignore~
+.gitkeep
+
+# ====================
+# OS Temporary Files
+# ====================
+Thumbs.db
+.directory
+*.tmp
+*.temp
+
+# ====================
+# IDE Generated
+# ====================
+*.iml
+.gradle/
+.m2/
+.classpath
+.project
+
+# ====================
+# Node (if Markdown/Pandoc tools used)
+# ====================
+node_modules/
+package-lock.json
+yarn.lock
+
+# ====================
+# Environment Variables
+# ====================
+.env
+.env.local
+.env.*.local
+
+# ====================
+# LaTeX-specific Build Artifacts
+# ====================
+**/*.bak
+**/*.backup
+_minted-*/
