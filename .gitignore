@@ -15,12 +15,7 @@
 *.blg
 *.xdv
 *.dvi
-*.ps
-
-# ========================
-# PDF Output (regenerate)
-# ========================
-*.pdf
+*.pss
 
 # ====================
 # Python & venv
@@ -58,7 +53,8 @@ build/
 # ====================
 # IDEs & Editors
 # ====================
-.vscode/
+.vscode/*
+!.vscode/mcp.json
 .idea/
 *.sublime-project
 *.sublime-workspace
