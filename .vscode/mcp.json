@@ -1,0 +1,28 @@
+{
+  "servers": {
+    "office-word-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["office-word-mcp-server"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "MCP_LOG_LEVEL": "info"
+      },
+      "description": "Microsoft Office / Word MCP server for document operations",
+      "sandboxEnabled": true,
+      "sandbox": {
+        "filesystem": {
+          "allowWrite": ["${workspaceFolder}"]
+        },
+        "network": {
+          "allowedDomains": ["api.office.com", "graph.microsoft.com"]
+        }
+      }
+    },
+    "arxiv-latex-mcp": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["arxiv-latex-mcp"]
+    }
+  }
+}
