@@ -3,7 +3,7 @@
     "office-word-mcp": {
       "type": "stdio",
       "command": "uvx",
-      "args": ["office-word-mcp-server"],
+      "args": ["--from", "office-word-mcp-server", "word_mcp_server"],
       "cwd": "${workspaceFolder}",
       "env": {
         "MCP_LOG_LEVEL": "info"
